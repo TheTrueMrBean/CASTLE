@@ -122,5 +122,20 @@
   <ItemGroup>
     <None Include="Resources\Page9drawing.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Not Dragon Squish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dragon Squish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Page13Drawing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IDK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jail.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

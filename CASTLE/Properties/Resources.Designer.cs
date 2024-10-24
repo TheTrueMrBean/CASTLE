@@ -63,6 +63,16 @@ namespace CASTLE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ADDED {
+            get {
+                object obj = ResourceManager.GetObject("ADDED", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ARROW {
             get {
                 object obj = ResourceManager.GetObject("ARROW", resourceCulture);
@@ -106,6 +116,46 @@ namespace CASTLE.Properties {
         internal static System.Drawing.Bitmap Image1 {
             get {
                 object obj = ResourceManager.GetObject("Image1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Jail {
+            get {
+                object obj = ResourceManager.GetObject("Jail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Page13Drawing {
+            get {
+                object obj = ResourceManager.GetObject("Page13Drawing", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Page14 {
+            get {
+                object obj = ResourceManager.GetObject("Page14", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Page16drawing {
+            get {
+                object obj = ResourceManager.GetObject("Page16drawing", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

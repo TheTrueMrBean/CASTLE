@@ -211,6 +211,7 @@ namespace CASTLE
             {
                 Random randGen = new Random();
                 int random = randGen.Next(1, 101);
+                random = 51;
                 if (random > 50)
                 {
                     page = 4;
@@ -314,7 +315,7 @@ namespace CASTLE
                         option3Text.Text = "";
                         displayText.Text = "it's 1480 you can't swim";
                         Refresh();
-                        Thread.Sleep(500);
+                        Thread.Sleep(800);
                         displayText.Text = "YOU HAVE DIED!   Play Again";
                         option1Text.Text = "Yes";
                         option2Text.Text = "NO";
@@ -328,11 +329,11 @@ namespace CASTLE
                         option3Text.Text = "";
                         displayText.Text = "You Leave the castle and are captured";
                         Refresh();
-                        Thread.Sleep(500);
+                        Thread.Sleep(800);
                         displayText.Text = "YOU HAVE DIED!   Play Again";
                         option1Text.Text = "Yes";
                         option2Text.Text = "NO";
-                        
+
                     }
                     break;
                 case 4:
@@ -341,7 +342,7 @@ namespace CASTLE
                         option3Text.Text = "";
                         displayText.Text = "They sent some arrows at you but you dodged it";
                         Refresh();
-                        Thread.Sleep(500);
+                        Thread.Sleep(800);
                         displayText.Text = "How do you sneak in now";
                         option1Text.Text = "You Hide in the food";
                         option2Text.Text = "Play Dead";
@@ -353,7 +354,7 @@ namespace CASTLE
                         option3Text.Text = "";
                         displayText.Text = "They sent some arrows at you and they hit you";
                         Refresh();
-                        Thread.Sleep(500);
+                        Thread.Sleep(800);
                         displayText.Text = "YOU HAVE DIED!   Play Again";
                         option1Text.Text = "Yes";
                         option2Text.Text = "NO";
@@ -363,32 +364,35 @@ namespace CASTLE
                     {
                         {
                             pictureBox1.Image = CASTLE.Properties.Resources.Page6drawing;
-                            displayText.Text = "They feed you to the dragon";
+                            displayText.Text = "They Just saw you dodge the arrow";
                             Refresh();
-                            Thread.Sleep(500);
+                            Thread.Sleep(800);
                             displayText.Text = "YOU HAVE DIED!   Play Again";
                             option1Text.Text = "Yes";
                             option2Text.Text = "NO";
-                            
+
 
                         }
-                        
+
                     }
                     break;
                 case 7:
                     {
                         pictureBox1.Image = CASTLE.Properties.Resources.Page7drawing;
+                        Refresh();
+                        Thread.Sleep(1500);
+                        pictureBox1.Image = CASTLE.Properties.Resources.ADDED;
                         displayText.Text = "They take you to the kitchen";
                         Refresh();
-                        Thread.Sleep(500);
+                        Thread.Sleep(800);
                         displayText.Text = "What do you do now";
                         option1Text.Text = "Leave the cart and go for a chef's outfit";
                         option2Text.Text = "Leave the kitchen";
                         option3Text.Text = "Stay in the cart";
-                        
+
                     }
 
-            
+
                     break;
                 case 8:
                     {
@@ -396,7 +400,7 @@ namespace CASTLE
                         option3Text.Text = "";
                         displayText.Text = "The chef see you and kills you with a frying pan";
                         Refresh();
-                        Thread.Sleep(500);
+                        Thread.Sleep(800);
                         displayText.Text = "YOU HAVE DIED!   Play Again";
                         option1Text.Text = "Yes";
                         option2Text.Text = "NO";
@@ -408,7 +412,7 @@ namespace CASTLE
                         option3Text.Text = "";
                         displayText.Text = "all the soldiers see you they kill you";
                         Refresh();
-                        Thread.Sleep(500);
+                        Thread.Sleep(800);
                         displayText.Text = "YOU HAVE DIED!   Play Again";
                         option1Text.Text = "Yes";
                         option2Text.Text = "NO";
@@ -416,42 +420,46 @@ namespace CASTLE
                     break;
                 case 10:
                     {
+                        pictureBox1.Image = CASTLE.Properties.Resources.Jail;
                         option3Text.Text = "";
                         displayText.Text = "they take you to their jail cells";
                         Refresh();
-                        Thread.Sleep(500);
+                        Thread.Sleep(800);
                         displayText.Text = "What do you do";
                         option1Text.Text = "Stay";
                         option2Text.Text = "Leave";
                     }
                     break;
-                    case 11:
+                case 11:
                     {
+                        pictureBox1.Image = CASTLE.Properties.Resources.Page9drawing;
                         displayText.Text = "You leave the cart and the guard see you.";
                         Refresh();
-                        Thread.Sleep(500);
+                        Thread.Sleep(800);
                         displayText.Text = "YOU HAVE DIED!   Play Again";
                         option1Text.Text = "Yes";
                         option2Text.Text = "NO";
                     }
                     break;
-                
+
                 case 12:
                     {
+                        pictureBox1.Image = CASTLE.Properties.Resources.Page14;
                         displayText.Text = "You are taken to the dragons den";
                         Refresh();
-                        Thread.Sleep(2000);
+                        Thread.Sleep(800);
                         displayText.Text = "what do you do";
                         option1Text.Text = "Stay";
                         option2Text.Text = "Leave";
                     }
                     break;
-                
+
                 case 13:
                     {
+                        pictureBox1.Image = CASTLE.Properties.Resources.Page13Drawing;
                         displayText.Text = "The dragon see you and eats you";
-                            Refresh();
-                        Thread.Sleep(2000);
+                        Refresh();
+                        Thread.Sleep(800);
                         displayText.Text = "YOU HAVE DIED!   Play Again";
                         option1Text.Text = "Yes";
                         option2Text.Text = "NO";
@@ -459,9 +467,10 @@ namespace CASTLE
                     break;
                 case 14:
                     {
+                        pictureBox1.Image = CASTLE.Properties.Resources.Page14;
                         displayText.Text = "You consider leaving";
                         Refresh();
-                        Thread.Sleep(2000);
+                        Thread.Sleep(800);
                         displayText.Text = "Do you stay or leave";
                         option1Text.Text = "Stay";
                         option2Text.Text = "Leave";
@@ -471,7 +480,7 @@ namespace CASTLE
                     {
                         displayText.Text = "You fell for the dragons trap";
                         Refresh();
-                        Thread.Sleep(2000);
+                        Thread.Sleep(800);
                         displayText.Text = "YOU HAVE DIED!   Play Again";
                         option1Text.Text = "Yes";
                         option2Text.Text = "NO";
@@ -479,9 +488,10 @@ namespace CASTLE
                     break;
                 case 16:
                     {
+                        pictureBox1.Image = CASTLE.Properties.Resources.Page16drawing;
                         displayText.Text = "You consider leaving";
                         Refresh();
-                        Thread.Sleep(2000);
+                        Thread.Sleep(800);
                         displayText.Text = "Do you stay or leave";
                         option1Text.Text = "Stay";
                         option2Text.Text = "Stay";
@@ -491,7 +501,7 @@ namespace CASTLE
                     {
                         displayText.Text = "You consider leaving but you can't";
                         Refresh();
-                        Thread.Sleep(2000);
+                        Thread.Sleep(800);
                         displayText.Text = "Do you stay or leave";
                         option1Text.Text = "Stay";
                         option2Text.Text = "Stay";
@@ -501,7 +511,7 @@ namespace CASTLE
                     {
                         displayText.Text = "You consider leaving but you can't";
                         Refresh();
-                        Thread.Sleep(2000);
+                        Thread.Sleep(800);
                         displayText.Text = "Do you stay or leave";
                         option1Text.Text = "Stay";
                         option2Text.Text = "Stay";
@@ -511,7 +521,7 @@ namespace CASTLE
                     {
                         displayText.Text = "You consider leaving but you can't";
                         Refresh();
-                        Thread.Sleep(2000);
+                        Thread.Sleep(800);
                         displayText.Text = "Do you stay or leave";
                         option1Text.Text = "Stay";
                         option2Text.Text = "Stay";
@@ -519,9 +529,9 @@ namespace CASTLE
                     break;
                 case 20:
                     {
-                        displayText.Text = "You died of old age";
+                        displayText.Text = "You Have been Squished";
                         Refresh();
-                        Thread.Sleep(2000);
+                        Thread.Sleep(800);
                         displayText.Text = "YOU HAVE DIED!   Play Again";
                         option1Text.Text = "Yes";
                         option2Text.Text = "NO";
@@ -531,11 +541,12 @@ namespace CASTLE
                 case 99:
                     {
                         displayText.Text = "Thank you for playing";
-                        Thread.Sleep(2000);
+                        Thread.Sleep(800);
                         Refresh();
                         Close();
                     }
                     break;
+
             }
         }
     }
