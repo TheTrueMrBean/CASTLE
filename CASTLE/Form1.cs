@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Media;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -18,6 +19,8 @@ namespace CASTLE
         public Form1()
         {
             InitializeComponent();
+            
+
             displayText.Text = "You are a robber trying to steal the dragons gold";
             Thread.Sleep(2000);
             Refresh();
@@ -27,7 +30,11 @@ namespace CASTLE
             option3Text.Text = "Storm the Gate";
 
         }
-
+        SoundPlayer Bonk = new SoundPlayer(Properties.Resources.Page8Bonk);
+        SoundPlayer Bow = new SoundPlayer(Properties.Resources.BowFire);
+        SoundPlayer Splash = new SoundPlayer(Properties.Resources.Splash);
+        SoundPlayer Angel = new SoundPlayer(Properties.Resources.Angel);
+        SoundPlayer Grass = new SoundPlayer(Properties.Resources.Grass);
         private void Option1_Click(object sender, EventArgs e)
         {
             if (page == 1)
@@ -211,7 +218,7 @@ namespace CASTLE
             {
                 Random randGen = new Random();
                 int random = randGen.Next(1, 101);
-                random = 51;
+                
                 if (random > 50)
                 {
                     page = 4;
@@ -299,6 +306,7 @@ namespace CASTLE
             {
                 case 1:
                     {
+                        Angel.Play();
                         pictureBox1.Image = CASTLE.Properties.Resources.page1drawing;
                         displayText.Text = "How do you plan to break into the castle";
                         option1Text.Text = "though the moat";
@@ -311,6 +319,9 @@ namespace CASTLE
                     break;
                 case 2:
                     {
+                        Splash.Play();
+                        Refresh();
+                        Thread.Sleep(500);
                         pictureBox1.Image = CASTLE.Properties.Resources.Page2Drawing;
                         option3Text.Text = "";
                         displayText.Text = "it's 1480 you can't swim";
@@ -325,6 +336,7 @@ namespace CASTLE
                     break;
                 case 3:
                     {
+
                         pictureBox1.Image = CASTLE.Properties.Resources.Page3drawing;
                         option3Text.Text = "";
                         displayText.Text = "You Leave the castle and are captured";
@@ -338,6 +350,7 @@ namespace CASTLE
                     break;
                 case 4:
                     {
+                        Bow.Play();
                         pictureBox1.Image = CASTLE.Properties.Resources.Page4Drawing;
                         option3Text.Text = "";
                         displayText.Text = "They sent some arrows at you but you dodged it";
@@ -350,6 +363,7 @@ namespace CASTLE
                     break;
                 case 5:
                     {
+                        Bow.Play();
                         pictureBox1.Image = CASTLE.Properties.Resources.Page5drawing;
                         option3Text.Text = "";
                         displayText.Text = "They sent some arrows at you and they hit you";
@@ -396,10 +410,15 @@ namespace CASTLE
                     break;
                 case 8:
                     {
+
+                        Bonk.Play();
+                        Refresh();
+                        Thread.Sleep(300);
                         pictureBox1.Image = CASTLE.Properties.Resources.Page8Drawing;
                         option3Text.Text = "";
                         displayText.Text = "The chef see you and kills you with a frying pan";
                         Refresh();
+                        
                         Thread.Sleep(800);
                         displayText.Text = "YOU HAVE DIED!   Play Again";
                         option1Text.Text = "Yes";

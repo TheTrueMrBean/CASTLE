@@ -175,4 +175,19 @@
   <data name="Jail" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Jail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Page8Bonk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hit-with-frying-pan-39340 (1).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Angel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ahhhh-37191 (1).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BowFire" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fire_bow_sound-mike-koenig.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Grass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\running-in-wet-grass-235969.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\water-splash-199583.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

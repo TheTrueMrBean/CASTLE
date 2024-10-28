@@ -137,5 +137,23 @@
   <ItemGroup>
     <None Include="Resources\Jail.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hit-with-frying-pan-39340 %281%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fire_bow_sound-mike-koenig.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\big-splash-sound-202450.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\water-splash-199583.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ahhhh-37191 %281%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\running-in-wet-grass-235969.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

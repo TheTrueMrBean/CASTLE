@@ -71,12 +71,30 @@ namespace CASTLE.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Angel {
+            get {
+                return ResourceManager.GetStream("Angel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap ARROW {
             get {
                 object obj = ResourceManager.GetObject("ARROW", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream BowFire {
+            get {
+                return ResourceManager.GetStream("BowFire", resourceCulture);
             }
         }
         
@@ -107,6 +125,15 @@ namespace CASTLE.Properties {
             get {
                 object obj = ResourceManager.GetObject("good drawing", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Grass {
+            get {
+                return ResourceManager.GetStream("Grass", resourceCulture);
             }
         }
         
@@ -231,6 +258,15 @@ namespace CASTLE.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Page8Bonk {
+            get {
+                return ResourceManager.GetStream("Page8Bonk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Page8Drawing {
@@ -247,6 +283,15 @@ namespace CASTLE.Properties {
             get {
                 object obj = ResourceManager.GetObject("Page9drawing", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Splash {
+            get {
+                return ResourceManager.GetStream("Splash", resourceCulture);
             }
         }
     }

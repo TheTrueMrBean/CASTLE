@@ -46,7 +46,7 @@
             this.Option1.Name = "Option1";
             this.Option1.Size = new System.Drawing.Size(75, 23);
             this.Option1.TabIndex = 1;
-            this.Option1.Text = "button1";
+            this.Option1.Text = "------>";
             this.Option1.UseVisualStyleBackColor = true;
             this.Option1.Click += new System.EventHandler(this.Option1_Click);
             // 
@@ -56,7 +56,7 @@
             this.option2.Name = "option2";
             this.option2.Size = new System.Drawing.Size(75, 23);
             this.option2.TabIndex = 2;
-            this.option2.Text = "button2";
+            this.option2.Text = "------>";
             this.option2.UseVisualStyleBackColor = true;
             this.option2.Click += new System.EventHandler(this.option2_Click);
             // 
@@ -66,7 +66,7 @@
             this.option3.Name = "option3";
             this.option3.Size = new System.Drawing.Size(75, 23);
             this.option3.TabIndex = 3;
-            this.option3.Text = "button3";
+            this.option3.Text = "------>";
             this.option3.UseVisualStyleBackColor = true;
             this.option3.Click += new System.EventHandler(this.option3_Click);
             // 
