@@ -15,11 +15,11 @@ namespace CASTLE
     public partial class Form1 : Form
     {
         int page = 1;
-       
+
         public Form1()
         {
             InitializeComponent();
-            
+
 
             displayText.Text = "You are a robber trying to steal the dragons gold";
             Thread.Sleep(2000);
@@ -35,6 +35,7 @@ namespace CASTLE
         SoundPlayer Splash = new SoundPlayer(Properties.Resources.Splash);
         SoundPlayer Angel = new SoundPlayer(Properties.Resources.Angel);
         SoundPlayer Grass = new SoundPlayer(Properties.Resources.Grass);
+        SoundPlayer Dragon = new SoundPlayer(Properties.Resources.Dragon);
         private void Option1_Click(object sender, EventArgs e)
         {
             if (page == 1)
@@ -65,7 +66,7 @@ namespace CASTLE
             {
                 page = 8;
             }
-           else  if (page == 8)
+            else if (page == 8)
             {
                 page = 1;
             }
@@ -218,7 +219,7 @@ namespace CASTLE
             {
                 Random randGen = new Random();
                 int random = randGen.Next(1, 101);
-                
+
                 if (random > 50)
                 {
                     page = 4;
@@ -299,7 +300,7 @@ namespace CASTLE
             DisplayPage();
         }
 
-       
+
         public void DisplayPage()
         {
             switch (page)
@@ -336,7 +337,7 @@ namespace CASTLE
                     break;
                 case 3:
                     {
-
+                        Grass.Play();
                         pictureBox1.Image = CASTLE.Properties.Resources.Page3drawing;
                         option3Text.Text = "";
                         displayText.Text = "You Leave the castle and are captured";
@@ -377,6 +378,7 @@ namespace CASTLE
                 case 6:
                     {
                         {
+                            Bow.Play();
                             pictureBox1.Image = CASTLE.Properties.Resources.Page6drawing;
                             displayText.Text = "They Just saw you dodge the arrow";
                             Refresh();
@@ -392,6 +394,7 @@ namespace CASTLE
                     break;
                 case 7:
                     {
+                        Grass.Play();
                         pictureBox1.Image = CASTLE.Properties.Resources.Page7drawing;
                         Refresh();
                         Thread.Sleep(1500);
@@ -418,7 +421,7 @@ namespace CASTLE
                         option3Text.Text = "";
                         displayText.Text = "The chef see you and kills you with a frying pan";
                         Refresh();
-                        
+
                         Thread.Sleep(800);
                         displayText.Text = "YOU HAVE DIED!   Play Again";
                         option1Text.Text = "Yes";
@@ -427,6 +430,7 @@ namespace CASTLE
                     break;
                 case 9:
                     {
+                        Bonk.Play();
                         pictureBox1.Image = CASTLE.Properties.Resources.Page9drawing;
                         option3Text.Text = "";
                         displayText.Text = "all the soldiers see you they kill you";
@@ -497,6 +501,7 @@ namespace CASTLE
                     break;
                 case 15:
                     {
+                        Dragon.Play();
                         displayText.Text = "You fell for the dragons trap";
                         Refresh();
                         Thread.Sleep(800);
@@ -507,6 +512,7 @@ namespace CASTLE
                     break;
                 case 16:
                     {
+                        Dragon.Play();
                         pictureBox1.Image = CASTLE.Properties.Resources.Page16drawing;
                         displayText.Text = "You consider leaving";
                         Refresh();
@@ -518,6 +524,7 @@ namespace CASTLE
                     break;
                 case 17:
                     {
+                        Dragon.Play();
                         displayText.Text = "You consider leaving but you can't";
                         Refresh();
                         Thread.Sleep(800);
@@ -528,6 +535,8 @@ namespace CASTLE
                     break;
                 case 18:
                     {
+                        Dragon.Play();
+
                         displayText.Text = "You consider leaving but you can't";
                         Refresh();
                         Thread.Sleep(800);
@@ -538,6 +547,8 @@ namespace CASTLE
                     break;
                 case 19:
                     {
+                        Dragon.Play();
+
                         displayText.Text = "You consider leaving but you can't";
                         Refresh();
                         Thread.Sleep(800);
@@ -546,8 +557,12 @@ namespace CASTLE
                         option2Text.Text = "Stay";
                     }
                     break;
+
                 case 20:
                     {
+
+                        Dragon.Play();
+
                         displayText.Text = "You Have been Squished";
                         Refresh();
                         Thread.Sleep(800);
@@ -569,5 +584,6 @@ namespace CASTLE
             }
         }
     }
-
 }
+
+
