@@ -158,5 +158,11 @@
   <ItemGroup>
     <None Include="Resources\dragon-growl-37570.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foley-a-heavily-laden-wooden-cart-moving-over-cobblestones-246657.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragon-roar-high-intensity-36564.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

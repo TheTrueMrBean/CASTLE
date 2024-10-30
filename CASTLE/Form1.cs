@@ -36,6 +36,8 @@ namespace CASTLE
         SoundPlayer Angel = new SoundPlayer(Properties.Resources.Angel);
         SoundPlayer Grass = new SoundPlayer(Properties.Resources.Grass);
         SoundPlayer Dragon = new SoundPlayer(Properties.Resources.Dragon);
+        SoundPlayer Cart = new SoundPlayer(Properties.Resources.Cart);
+        SoundPlayer Roar = new SoundPlayer(Properties.Resources.Roar);
         private void Option1_Click(object sender, EventArgs e)
         {
             if (page == 1)
@@ -443,6 +445,7 @@ namespace CASTLE
                     break;
                 case 10:
                     {
+                        Cart.Play();
                         pictureBox1.Image = CASTLE.Properties.Resources.Jail;
                         option3Text.Text = "";
                         displayText.Text = "they take you to their jail cells";
@@ -455,6 +458,7 @@ namespace CASTLE
                     break;
                 case 11:
                     {
+                        Bonk.Play();
                         pictureBox1.Image = CASTLE.Properties.Resources.Page9drawing;
                         displayText.Text = "You leave the cart and the guard see you.";
                         Refresh();
@@ -467,6 +471,7 @@ namespace CASTLE
 
                 case 12:
                     {
+                        Cart.Play();
                         pictureBox1.Image = CASTLE.Properties.Resources.Page14;
                         displayText.Text = "You are taken to the dragons den";
                         Refresh();
@@ -479,6 +484,7 @@ namespace CASTLE
 
                 case 13:
                     {
+                        Dragon.Play();
                         pictureBox1.Image = CASTLE.Properties.Resources.Page13Drawing;
                         displayText.Text = "The dragon see you and eats you";
                         Refresh();
@@ -490,6 +496,7 @@ namespace CASTLE
                     break;
                 case 14:
                     {
+                        Roar.Play();
                         pictureBox1.Image = CASTLE.Properties.Resources.Page14;
                         displayText.Text = "You consider leaving";
                         Refresh();
@@ -575,7 +582,7 @@ namespace CASTLE
                 case 99:
                     {
                         displayText.Text = "Thank you for playing";
-                        Thread.Sleep(800);
+                        Thread.Sleep(2000);
                         Refresh();
                         Close();
                     }
